@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+   body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    text-align: center;
+    text-shadow: aqua;
+  }
+button{
+    background: linear-gradient(to right, #00AAFF, #00FF6C);	
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    -webkit-text-fill-color: #000000;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+ </style>
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+ <h2 id="demo"></h2>
+ <button id="Reload"onclick="Reload()">Click Me To Reload</button>
+</div>
+
+<script>
+
+const decision = prompt("Type 'division' to divide, 'multiplication' to multiply, 'subtraction' to subtract, 'addition' to add, 'square' to find square, 'squareroot' to find squareroot, 'lcm' to find lcm, 'hcf' to find hcf (Note: This is case sensitive.)");
+
+if(decision == "division" ){
+const num1 = parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+var result = num1 / num2;
+}
+else if(decision == "multiplication"){
+const num1 = parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+var result = num1 * num2;
+}
+else if(decision == "subtraction"){
+const num1 = parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+var result = num1 - num2;
+}
+else if(decision == "addition"){
+const num1 = parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+var result = num1 + num2;
+}
+else if(decision == "square"){
+const num = parseInt(prompt('Enter the number '));
+  var result = num ** 2;
+}
+else if(decision == "squareroot"){
+const numb = parseInt(prompt('Enter the number '));
+
+  var result = Math.sqrt(numb);
+}
+else if(decision == "lcm"){
+const num1 = parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+var result = lcm(num1, num2);
+}
+else if(decision == "hcf"){
+const num1 = parseInt(prompt('Enter the first number '));
+const num2 = parseInt(prompt('Enter the second number '));
+var result = hcf(num1, num2);
+}
+else if(decision == ""
+  (document.getElementById("demo").innerHTML = "Please enter a valid input"));
+else(
+  (document.getElementById("demo").innerHTML = "Please enter a valid input"));
+
+  function lcm(a,b){
+  var lcm = a*b;
+  while(a!=b){
+    if(a>b){
+      a = a-b;
+    }
+    else{
+      b = b-a;
+    }
+  }
+  return lcm/a;
+}
+
+function hcf(a,b){
+  var a = arguments[0];
+  var b = arguments[1];
+  while(a!=b){
+    if(a>b){
+      a = a-b;
+    }
+    else{
+      b = b-a;
+    }
+  }
+  return a;
+}
+
+function Reload(){
+  window.location.reload();
+}
+
+document.getElementById("demo").innerHTML = result;
+</script>
+</body>
+</html>
