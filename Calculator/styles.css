@@ -112,20 +112,5 @@ button:focus{
 .container button:disabled:focus{
   outline: none;
 }
-.container button:disabled{
-  background: linear-gradient(to right, #00AAFF, #00FF6C);
-}
-.container button:disabled:hover{
-  background: linear-gradient(to right, #00FF6C, #00AAFF);
-}
-.container button:disabled:active{
-  background: linear-gradient(to right, #00AAFF, #00FF6C);
-}
-.container button:disabled:focus{
-  outline: none;
-}
-.container button:disabled{
-  background: linear-gradient(to right, #00AAFF, #00FF6C);
-}
 
 
