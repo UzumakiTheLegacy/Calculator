@@ -1,22 +1,131 @@
 body {
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-    text-align: center;
-    text-shadow: aqua;
-  }
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+  text-align: center;
+  text-shadow: aqua;
+}
 button{
-    background: linear-gradient(to right, #00AAFF, #00FF6C);	
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    text-align: center;
-    -webkit-text-fill-color: #000000;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
+  background: linear-gradient(to right, #00AAFF, #00FF6C);	
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  -webkit-text-fill-color: #000000;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
 
 }
+button:hover{
+  background: linear-gradient(to right, #00FF6C, #00AAFF);
+}
+button:active{
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+button:focus{
+  outline: none;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container h1{
+  font-size: 50px;
+  color: white;
+  text-shadow: black;
+}
+.container p{
+  font-size: 20px;
+  color: white;
+  text-shadow: black;
+}
+.container a{
+  text-decoration: none;
+  color: white;
+  text-shadow: black;
+}
+.container a:hover{
+  text-decoration: none;
+  color: white;
+  text-shadow: black;
+}
+.container a:active{
+  text-decoration: none;
+  color: white;
+  text-shadow: black;
+}
+.container a:focus{
+  outline: none;
+}
+.container button{
+  background: linear-gradient(to right, #00AAFF, #00FF6C);	
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  -webkit-text-fill-color: #000000;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+button:hover{
+  background: linear-gradient(to right, #00FF6C, #00AAFF);
+}
+button:active{
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+button:focus{
+  outline: none;
+}
+.container button:hover{
+  background: linear-gradient(to right, #00FF6C, #00AAFF);
+}
+.container button:active{
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+.container button:focus{
+  outline: none;
+}
+.container button:disabled{
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+.container button:disabled:hover{
+  background: linear-gradient(to right, #00FF6C, #00AAFF);
+}
+.container button:disabled:active{
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+.container button:disabled:focus{
+  outline: none;
+}
+.container button:disabled{
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+.container button:disabled:hover{
+  background: linear-gradient(to right, #00FF6C, #00AAFF);
+}
+.container button:disabled:active{
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+.container button:disabled:focus{
+  outline: none;
+}
+.container button:disabled{
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
 
